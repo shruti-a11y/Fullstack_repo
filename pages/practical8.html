@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+        margin: auto;
+        width: 100%;
+        /* height: 100vh; */
+        /* border: 3px solid rgb(66, 35, 35); */
+        /* padding:  5px; */
+      }
+      #header {
+        width: 100%;
+        height: 55px;
+        background-color: #e3b10a;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        
+      }
+      #banner {
+          display: flex;
+          height: 500px;
+          background-image: url(../assets/bgimg.jpg); 
+          background-size: cover;
+          /* background-repeat: no-repeat; */
+          justify-content: center;
+          align-items: center;
+          color: rgb(122, 27, 27);
+          margin-bottom: 30px;
+      }
+      #vert_circle{
+          display: flex;
+          width: 100%;
+          height : 290px;
+          padding: 15px 10px;
+          
+        }
+        .circle{
+            width: 240px;           
+            height: 240px;
+            border-radius: 250px;
+            margin-left: 80px;
+            background-color: rgb(211, 108, 165);
+        }    
+        #rectan{
+            display:inline-flex;
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            justify-content: space-evenly
+
+            
+            
+            /* margin: 10px 10px; */
+            /* padding: 10px 10px; */
+        }
+        .rect{
+             width: 300px;
+            height: 400px;
+            background-color: rgb(90 213 240);
+            overflow: hidden;
+            padding: 20px;
+            margin-right: 20px;
+            text-align: justify;
+            margin-bottom: 10px;
+            border-radius: 15px
+            
+
+            
+            /* border-radius: 250px; */
+            /* margin-top: 20px;
+            margin-left: 80px;
+            background-color: rgb(211, 108, 165); */
+        }
+        .rect img{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+        }
+        .rect h2{
+            text-align: center;
+            margin: 10px;
+        }
+        .myButton{
+            /* block properties */
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .myButton:hover{
+            background-color: blue;
+        }
+
+
+      .content {
+        height:460px;
+        width: 100%;
+        margin: 10px;
+      }
+       .container ::after {
+        content: "";
+        display: block;
+        clear: both;
+      } 
+      #main {
+        width: 40%;
+        height: 100%;
+        background-color: rgb(169 207 84);
+        
+        padding: 10px;;
+        text-align: justify;
+        /* align-items:; */
+        display: inline-block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        overflow: hidden;
+        
+      }
+      
+      #main p{
+            padding: 20px 15px;
+          font-family: serif;
+          font-size: 15px;
+
+      }
+      #right {
+        width: 58%;
+        height: 100%;
+        float: right;
+      }
+        .artical{
+                display: flex;
+                width: 100%;
+                height: 150px;
+                background-color: rgb(186, 134, 235);
+                margin-bottom: 5px;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        
+        .footer {
+          width: 100%;
+          height: 70px;
+          padding: 20px;
+          background-color: rgb(227 177 10);
+          justify-content: center;
+          text-align: center;
+        }
+        .footer a{
+            
+            padding: 10px;
+        }
+        
+        h2 {
+            font-family :Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #cir1{
+            background-size: cover;
+            background-image: url(../assets/7.png);
+        }
+        #cir2{
+            background-size: cover;
+            background-image: url(../assets/6.png);
+        }
+        #cir3{
+            background-size: cover;
+            background-image: url(../assets/4.png);
+        }
+        #cir4{
+            background-size: cover;
+            background-image: url(../assets/5.png);
+        }
+        #art1{
+            background-size: cover;
+            background-image: url(../assets/art2.jpg);
+        }
+        #art2{
+            background-size: cover;
+            background-image: url(../assets/11.jpg);
+        }
+        #art3{
+            background-size: cover;
+            background-image: url(../assets/art3.jpg);
+        }
+        .menu{
+            width: 100%;
+        height: 55px;
+        background-color: #e3b10a;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: fixed
+    /* background-color: gainsboro;
+    text-align: center;
+    border-bottom: 4px solid white; */
+
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu ul li{
+    width: 150px;
+    margin: 7px;
+    padding: 15px; 
+} 
+.menu ul li a{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(50, 50, 50)  ;
+}
+.menu ul li :hover , .active{
+    color: red;
+    scroll-behavior: smooth;
+    
+ }
+        </style>
+  </head>
+  <body>
+      
+      
+    <div class="container">
+      <div id="header">
+          <div class="menu">
+              <ul>
+                <li class="active" ><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li class="active"><a href="#team"><i class="fa fa-user"></i> Team</a></li>
+                <li class="active"><a href="#about"><i class="fa fa-server"></i>About</a></li>
+                <li class="active"><a href="#tech"><i class="fa fa-edit"></i> Technologies</a></li>
+                
+                <li class="active"><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>     
+                  
+              </ul>
+          </div>
+      </div>
+      <div id="banner">Banner</div>
+      <h2 id="team">Team</h2>
+      <div id="vert_circle">
+        <div class="circle" id="cir1">
+            
+        </div>
+        <div class="circle" id="cir2"></div>
+        <div class="circle" id="cir3"></div>
+        <div class="circle" id="cir4"></div>
+     </div>
+    
+      
+      
+      <!-- section-2  -->
+    <h2>About Us</h2>
+    <div class="content" id="about">
+        <div id="main">
+            <h3>About Project</h3>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia molestias dignissimos unde voluptates doloremque incidunt debitis numquam autem, suscipit ipsa. Neque beatae reprehenderit a! Commodi cum ipsa iure iusto, est aspernatur aut inventore eaque fuga molestias et ducimus dicta amet aliquam natus labore? Aut beatae modi dolorum illum? Suscipit amet error, tempora vitae rem aperiam eos debitis culpa quidem distinctio, a recusandae ducimus tenetur ullam molestiae commodi pariatur expedita illum totam. Maxime libero officia exercitationem cumque eligendi tempore, corporis d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod numquam reiciendis optio. Blanditiis nemo, a illo deleniti dolor ab in ex ut quam reprehenderit recusandae sed maiores vitae labore debitis molestias fuga consequuntur. Ipsum nam id at esse fuga cumque harum, culpa vel suscipit distinctio illo temporibus in ex quia odit doloribus aspernatur eveniet consequatur! Doloremque veniam sit corrupti dolore, sed impedit expedita maxime distinctio molestias nihil voluptates explicabo a voluptate quae odit placeat exercitationem labore, vero minima et rem deleniti! Natus impedit itaque, quaerat blanditiis debitis doloremque. Dignissimos esse laborum velit pariatur sapiente error facilis dolorem reprehenderit? Laudantium consequuntur, temporibus enim impedit facilis voluptatibus debitis dolorum cum nostrum dolorem vitae. Unde beatae obcaecati iure alias est tenetur sapiente odit illum animi maxime, quasi nam pariatur praesentium dolorum provident veniam voluptatem ducimus voluptas rerum, quae ipsam velit id mollitia! Maxime perferendis ratione in doloribus quidem alias dolorum quis architecto omnis iste natus soluta vitae, sunt dignissimos animi eligendi.</p>
+        </div>
+        <div id="right">
+          <div class="artical" id="art1">Artical-1</div>
+          <div class="artical" id="art2">Artical-2</div>
+          <div class="artical" id="art3">Artical-3</div>
+        </div>
+    </div>
+
+    <!-- section-3 -->
+    <h2 id="tech">Technologies</h2>
+    <div id="rectan">
+        <div class="rect">
+                <div class="img">  
+                  <img src="../assets/intro_html.png"  alt="">
+                </div>
+            <h2>HTML</h2>
+            <p>
+              The <strong>HyperText Markup Language</strong>,is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages.
+            </p>
+            <div class="image">
+              <a href="abouthtml.html" class="myButton">Read more</a>
+            </div>
+          </div>
+        
+        <div class="rect">
+            <div>
+                <img src="../assets/getting_css.png" alt="">
+              </div>
+              <h2>CSS</h2>
+              <p>
+                CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.This separation can improve content accessibility, provide more flexibility and control .
+              </p>
+              <div class="image">
+                <a href="aboutcss.html" class="myButton">Read more</a>
+              </div>
+            </div>
+        
+        <div class="rect">
+            <div>
+                <img src="../assets/jquery.png" alt="">
+              </div>
+              <h2>jQuery</h2>
+              <p>
+                Query's syntax is designed to make it easier to navigate a document, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library.
+                
+              </p>
+              <div class="image">
+                <a href="aboutjQuery.html" class="myButton">Read more</a>
+              </div>
+        </div>
+        <div class="rect">
+            <div>
+                <img src="../assets/bootstrap.jpg" alt="">
+              </div>
+              <h2> Bootstrap</h2>
+              <p>
+                Bootstrap is a HTML, CSS & JS Library that focuses on simplifying the development of web pages . The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, and layout to that project.
+                
+              </p>
+              <div class="image">
+                <a href="bootstrap.html" class="myButton">Read more</a>
+              </div>
+        </div>
+    </div>
+
+    <h2 id="contact">Contact</h2>   
+    <div class="footer">
+            Website Template from Practical-8 
+            <br>
+            <a href="#">Back to top</a>
+    </div>
+</div>
+  </body>
+</html>
