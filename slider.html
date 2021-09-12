@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+        }
+        .door{
+            width: 200px;
+            height: 300px;
+            background-color: honeydew;
+            position: relative;
+            text-align: center ;
+            
+        }
+        .slider{
+            width: inherit;
+            height: inherit;
+            background: black;
+            position: absolute;
+            transition: 2s;
+            transition-timing-function: ease;
+            right: 0;
+            
+        }
+        .door:hover .slider{
+            right: -100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="door">
+            
+            <div class="slider">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
