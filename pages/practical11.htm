@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+        
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+        }
+        header{
+            display: flex;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 2px solid rebeccapurple;
+
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            height: 80vh;
+            border: 2px solid black;
+            
+            background-color: rgb(105, 104, 104);
+
+        }
+        main section{
+
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            height: auto;
+            border: 3px solid paleturquoise;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid white;
+        }
+        section aside{
+            width: 30%;
+            height: 100%;
+            border-left:2px solid white;
+        }
+        section .box1{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid white;
+            flex-grow: 2;
+            justify-content: center;
+            align-items: center;
+
+        }
+        section .box1 article{
+            height: 100%;
+            width: 200px;
+            border: 1px solid white;
+
+
+        }
+        .box1 article ul{
+            list-style: none;
+        }
+        .box1 article ul link{
+            text-decoration: none;
+            
+        }
+
+
+        footer{
+            display: flex;
+            width: 100%;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(32, 32, 32);
+            border: 2px solid black;
+            color: grey;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Content Area
+        </header>
+        <main>
+            <section class="box">
+                <aside>
+                    About
+                </aside>
+                <div class="box1" id="sec1">
+                    <article id="1">
+                        <h2>CATEGORIES</h2>
+                        <ul class="link">
+                            <li class="active"><a href="#">C</a></li>
+                            <li class="active"><a href="#">C++</a></li>
+                            <li class="active"><a href="#">Python</a></li>
+                            <li class="active"><a href="#">Java</a></li>
+                            <li class="active"><a href="#">React</a></li>
+                            
+                        </ul>
+                    </article>
+                    <article id="2">
+                        <H2>QUICK LINKS</H2>
+                    </article>
+                    <article id="3">
+                        <H2>CONTACT US</H2>
+                    </article>
+                </div>
+            </section>
+            <section id="sec2"> register</section>
+            <section id="sec3">social icons</section>
+        </main>
+        <footer>
+            copy right
+        </footer>
+
+    </div>
+    
+</body>
+</html>
