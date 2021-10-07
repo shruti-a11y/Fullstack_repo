@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(248, 240, 248);
+        }
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items :center; */
+            width: 80%;
+            height: 90vh;
+            /* border: 2px solid black; */
+            padding: auto;
+            background-color: white;
+            margin-top: 40px;
+
+        }
+
+        /* Column Css */
+        table{
+            margin: 0 ;
+            border-collapse: collapse;
+        }
+
+        .basic{
+            background-color: #c1dcb7;
+        }
+        .plus{
+            background-color: #bad6c8;
+        }
+        .deluxe{
+            background-color: #bbd3dc;
+        }
+        .pro{
+            background-color: #d5e4bc;
+        }
+        h1{
+            text-align: center;
+        }
+        thead{
+            height: 80px;
+            font-size: 2rem;
+            color: #64548f;
+        }
+        
+        td, th{
+            width: 150px;
+            padding: 8px 5px;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+        }
+        td{
+            color: purple;
+            text-align: center;
+            height: 30px;
+            font-size: 1.2rem;
+        }
+        
+        /* add different color to odd value */
+        tbody tr:nth-child(odd){
+            background-color: #edf3e2;
+        }
+        tbody tr:nth-child(1){
+            height: 50px;
+            font-size: 1.3rem;
+            color: green;
+            
+        }
+        /* ions css */
+        tbody i  {
+            
+            color: red;
+        }
+        
+        /* footer styling */
+        tfoot{
+            height: 70px;
+        }
+        .btn{
+            background-color: #64548f;
+            color: white;
+            padding: 14px 48px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+        }
+
+    </style>  
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Select Your Plan
+        </h1>
+        <table>
+            <colgroup class="basic"></colgroup>
+            <colgroup class="plus"></colgroup>
+            <colgroup class="deluxe"></colgroup>
+            <colgroup class="pro"></colgroup>
+            <thead>
+                <th>
+                    <i class="fa fa-building" aria-hidden="true"></i>Basic</th>
+                <th>
+                    <i class="fa fa-superpowers" aria-hidden="true"></i>Plus</th>
+                <th>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>Deluxe</th>
+                <th>
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    Pro</th>
+
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <th>RS. 500/-</th>
+                    <th>RS. 1500/-</th>
+                    <th>RS. 2500/-</th>
+                    <th>RS. 3500/-</th>
+                </tr>
+                <tr class="item">
+                    <td>50 pages</td>
+                    <td>75 pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr class="item">
+                    <td>3 Users</td>
+                    <td>5 Users</td>
+                    <td>10 Users</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr class="item">
+                    <td>10 Sites</td>
+                    <td>25 Sites</td>
+                    <td>100 Sites</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr class="item">
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr class="item">
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <i class="fa fa-check" style="color: lightgreen;"></i>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i></td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i></td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <i class="fa fa-check" style="color: lightgreen;"></i>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i></td>
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i></td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i></td>
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check" style="color: lightgreen;"></i>
+                    </td>
+                </tr>
+                <!-- <tr class="footer">
+                </tr> -->
+                
+            </tbody>
+            <tfoot>
+                <td>
+                    <button class="btn">Sign Up</button>
+                </td>
+                <td>
+                    <button class="btn">Sign Up</button>
+                </td>
+                <td>
+                    <button class="btn">Sign Up</button>
+                </td>
+                <td>
+                    <button class="btn">Sign Up</button>
+                </td>
+
+            </tfoot>
+                        
+        </table>
+    </div>
+    
+</body>
+</html>
