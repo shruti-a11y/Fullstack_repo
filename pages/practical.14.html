@@ -74,6 +74,7 @@
       let count = 0;
 
       updateDisplay();
+      document.getElementById("minus").disabled = true;
 
       counterPlusElem.addEventListener("click", () => {
         count++;
@@ -83,7 +84,7 @@
 
       counterMinusElem.addEventListener("click", () => {
         count--;
-        if (count <= 0) {
+        if (count == 0) {
           document.getElementById("minus").disabled = true;
         }
 
