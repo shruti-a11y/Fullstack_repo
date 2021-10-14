@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(53, 49, 49);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 34px;
+        color: white;
+      }
+      .counter {
+        margin: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: chartreuse;
+      }
+      .counter-minus {
+        margin: 35px;
+        padding: 10px;
+        font-size: 1.4rem;
+        background-color: chartreuse;
+      }
+      .counter-plus {
+        margin: 35px;
+        padding: 10px;
+        font-size: 1.4rem;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- body contain counter -->
+    <div class="container">
+      <h1>COUNTER</h1>
+      <div class="counter">
+        <button class="counter-minus" id="minus">
+          <i class="fa fa-minus"></i>
+        </button>
+        <h1 class="counter-display">(..)</h1>
+        <button class="counter-plus">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+    <script>    
+
+      //counter
+
+      let counterDisplayElem = document.querySelector(".counter-display");
+      let counterMinusElem = document.querySelector(".counter-minus");
+      let counterPlusElem = document.querySelector(".counter-plus");
+
+      let count = 0;
+
+      updateDisplay();
+
+      counterPlusElem.addEventListener("click", () => {
+        count++;
+        document.getElementById("minus").disabled = false;
+        updateDisplay();
+      });
+
+      counterMinusElem.addEventListener("click", () => {
+        count--;
+        if (count <= 0) {
+          document.getElementById("minus").disabled = true;
+        }
+
+        updateDisplay();
+      });
+
+      function updateDisplay() {
+        counterDisplayElem.innerHTML = count;
+      }
+    </script>
+  </body>
+</html>
